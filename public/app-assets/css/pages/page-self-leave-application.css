@@ -1,0 +1,368 @@
+.self-leave-application .holiday-and-statistic {
+    margin-top: 40px;
+}
+
+.self-leave-application .public-holiday {
+    padding-right: 10px;
+    margin-right: 1rem;
+}
+
+.self-leave-application .public-holiday .card-body {
+    height: 25vh;
+    overflow-y: auto;
+}
+
+.self-leave-application .public-holiday .card-body::-webkit-scrollbar {
+    width: 12px;
+}
+
+.self-leave-application .public-holiday .card-body::-webkit-scrollbar-track {
+    border: 1px solid #babfc7;
+    border-radius: 2px 2px 0 0;
+    margin-bottom: 15px;
+}
+
+.self-leave-application .public-holiday .card-body::-webkit-scrollbar-thumb {
+    background: #c4c4c4;
+    background-clip: padding-box;
+    border: 3px solid transparent;
+    border-radius: 1px;
+}
+
+.self-leave-application .public-holiday .inside {
+    border-bottom: 1px solid #babfc7;
+    color: #4b4b4b;
+    margin-bottom: 14px;
+}
+
+.self-leave-application .public-holiday .inside:nth-child(4) {
+    border-bottom: 0;
+}
+
+.self-leave-application .public-holiday .inside:last-child {
+    border-bottom: 0;
+    margin-bottom: -20px;
+}
+
+.self-leave-application .public-holiday .inside p:first-child {
+    color: #4b4b4b;
+    font-weight: 600;
+}
+
+.self-leave-application .public-holiday .inside p:last-child {
+    color: #4b4b4b;
+    font-size: 12px;
+}
+
+.self-leave-application .your-statistic {
+    margin-left: 1rem;
+}
+
+.self-leave-application .your-statistic .card-header input {
+    border: 2px solid #7367f0;
+    border-radius: 8px;
+    color: #7367f0;
+    font-weight: 500;
+    text-align: left;
+    padding: 10px;
+    width: 96px;
+    height: 38px;
+}
+
+.self-leave-application .your-statistic .card-header input:focus {
+    outline: none;
+}
+
+.self-leave-application .your-statistic .card-header .yearpicker-container {
+    box-shadow: none;
+    border-color: #7367f0;
+    margin-top: 5px;
+    margin-left: -184px;
+    height: 244px;
+}
+
+.self-leave-application .your-statistic .card-header .yearpicker-container .yearpicker-header {
+    background: #7367f0;
+    border: none;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    color: white;
+    width: 279px;
+    margin-top: -0.4px;
+    margin-left: -0.5px;
+}
+
+.self-leave-application .your-statistic .card-header .yearpicker-container .yearpicker-header .yearpicker-prev,
+.self-leave-application .your-statistic .card-header .yearpicker-container .yearpicker-header .yearpicker-next {
+    margin-top: -4px;
+}
+
+.self-leave-application .your-statistic .card-header .yearpicker-container .yearpicker-header .yearpicker-prev:hover,
+.self-leave-application .your-statistic .card-header .yearpicker-container .yearpicker-header .yearpicker-next:hover {
+    color: white;
+}
+
+.self-leave-application .your-statistic .card-header .yearpicker-container .yearpicker-header .yearpicker-current {
+    font-weight: 500;
+}
+
+.self-leave-application .your-statistic .card-header .yearpicker-container .yearpicker-body .yearpicker-year {
+    color: #6e6b7b;
+}
+
+.self-leave-application .your-statistic .card-header .yearpicker-container .yearpicker-body .yearpicker-year .selected,
+.self-leave-application .your-statistic .card-header .yearpicker-container .yearpicker-body .yearpicker-year .selected:hover {
+    background: #7367f0;
+    border: none;
+    color: white;
+    font-weight: 500;
+}
+
+.self-leave-application .your-statistic .card-header .yearpicker-container .yearpicker-body .yearpicker-year li:hover {
+    background: #7367f026;
+    color: #7367f0;
+    font-weight: 500;
+}
+
+.self-leave-application .your-statistic .card-header span {
+    position: absolute;
+    margin-top: 8px;
+    margin-left: -26px;
+}
+
+.self-leave-application .your-statistic .card-body .row:first-child {
+    margin-top: 15px;
+}
+
+.self-leave-application .your-statistic .card-body .row:last-child {
+    margin-top: 35px;
+}
+
+.self-leave-application .your-statistic .card-body .statistic {
+    padding-top: 1px;
+    padding-left: 16px;
+}
+
+.self-leave-application .your-statistic .card-body .statistic div:first-child {
+    color: #6e6b7b;
+}
+
+.self-leave-application .your-statistic .card-body .statistic div:last-child {
+    color: #5e5873;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.self-leave-application .your-statistic .card-body .statistic button {
+    background: none;
+    border: none;
+    color: #7367f0;
+    text-decoration: underline;
+    margin: 0;
+    margin-left: 12px;
+    padding: 0;
+}
+
+.self-leave-application .public-holiday,
+.self-leave-application .your-statistic {
+    border-radius: 8px;
+    box-shadow: 1px 1px 11px 2px #00000026;
+    height: 35vh;
+}
+
+.self-leave-application .public-holiday h4,
+.self-leave-application .your-statistic h4 {
+    color: #333333;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+#leave-application-pending-status {
+    margin-top: 12px;
+    margin-bottom: 44px;
+}
+
+#leave-application-pending-status table {
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-top: 16px;
+}
+
+#leave-application-pending-status table tr th {
+    border-top: 1px solid #e0e0e0;
+    color: #0a0a0a;
+}
+
+#leave-application-pending-status table tr th,
+#leave-application-pending-status table tr td {
+    border-right: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+#leave-application-pending-status table tr th:first-child,
+#leave-application-pending-status table tr td:first-child {
+    border-left: 1px solid #e0e0e0;
+}
+
+#leave-application-pending-status table tr:first-child th:first-child {
+    border-top-left-radius: 6px;
+}
+
+#leave-application-pending-status table tr:first-child th:last-child {
+    border-top-right-radius: 6px;
+}
+
+#leave-application-pending-status table tr:last-child td:first-child {
+    border-bottom-left-radius: 6px;
+}
+
+#leave-application-pending-status table tr:last-child td:last-child {
+    border-bottom-right-radius: 6px;
+}
+
+#leave-application-pending-status .table thead th {
+    border-bottom: none;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+#leave-application-pending-status .table tbody tr:not(:last-child) td {
+    border-bottom: none;
+}
+
+#leave-application-pending-status .table tbody td {
+    color: #404040;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+#leave-application-pending-status .table thead th:not(:nth-child(8)),
+#leave-application-pending-status .table tbody td:not(:nth-child(8)) {
+    border-right: none;
+}
+
+#leave-application-pending-status #no-data-available {
+    text-align: center;
+    border-right: 1px solid #e0e0e0;
+}
+
+#leave-application-pending-status #pending-status-status {
+    width: 71px;
+}
+
+#medical-reimbursement-history #leave-history-datatables {
+    padding-top: 4px;
+}
+
+#medical-reimbursement-history #leave-history-datatables thead th {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    color: #0a0a0a;
+}
+
+#medical-reimbursement-history #leave-history-datatables tbody td {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+#leave-history-datatables-search {
+    position: absolute;
+    margin: 10.3px auto auto 20px;
+    color: #bfbfbf;
+}
+
+#leave-history-datatables-search img {
+    margin-right: 5.6px;
+}
+
+#leave-application-pending-status #pending-status-details,
+#leave-application-pending-status #pending-status-cancel {
+    width: 64px;
+    height: 20px;
+    padding: 0;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+#modal-request-medical-reimbursement #form-data #option-request-select,
+#modal-request-medical-reimbursement #form-data #option-leave-select {
+    display: none;
+}
+
+#modal-request-medical-reimbursement #form-data .select2-selection__rendered[title="Select Option Request"],
+#modal-request-medical-reimbursement #form-data .select2-selection__rendered[title="Select Option Leave"] {
+    color: #b9b9c3;
+}
+
+.swal2-icon {
+    background: url('../../../img/icons/alert-circle.svg');
+    border: none !important;
+    color: transparent !important;
+    width: 80px !important;
+    height: 80px !important;
+    margin-top: 20px !important;
+}
+
+.pending-status-title {
+    color: #5e5873 !important;
+    font-weight: 500 !important;
+    font-size: 23px !important;
+    margin-top: -10px !important;
+}
+
+.pending-status-text {
+    color: #6e6b7b;
+    margin-bottom: 10px;
+}
+
+.pending-status-close-button {
+    color: white !important;
+    box-shadow: none !important;
+}
+
+.pending-status-close-button:hover {
+    cursor: default !important;
+}
+
+.pending-status-cancel-button {
+    background: white !important;
+    border: 1px solid #ea5455 !important;
+    border-radius: 5px !important;
+    color: #ea5455 !important;
+    font-weight: 500 !important;
+    font-size: 14px !important;
+    padding: 10px 23px !important;
+    margin: auto auto 25px 10px !important;
+}
+
+.pending-status-cancel-button:focus {
+    color: white !important;
+}
+
+.pending-status-confirm-button {
+    border: 1px solid #7367f0 !important;
+    border-radius: 5px !important;
+    font-weight: 500 !important;
+    font-size: 14px !important;
+    padding: 10px 22px !important;
+    margin: auto 10px 25px auto !important;
+}
+
+.leave-details-statistics .period-label {
+    margin-top: 16px;
+    font-weight: 500;
+}
+
+.leave-details-statistics .custom-annual-leave div.d-flex:not(:first-child) {
+    margin-top: -8px;
+    margin-bottom: -20px;
+}
+
+.leave-details-statistics .d-flex div {
+    color: #6e6b7b;
+    font-weight: 400;
+}
+
+.leave-details-statistics .d-flex div:last-child {
+    margin-left: 70px;
+}

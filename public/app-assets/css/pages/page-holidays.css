@@ -1,0 +1,8 @@
+.input-manage-holidays label {
+    color: #5e5873;
+    font-weight: 600;
+}
+
+.input-manage-holidays textarea {
+    resize: none;
+}

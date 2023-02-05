@@ -1,0 +1,1085 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Proxsis Workspace Web API Documentation",
+        "description": "Every single endpoint are documented",
+        "contact": {
+            "email": "kokonur1020@gmai.com"
+        },
+        "version": "1.0.0"
+    },
+    "paths": {
+        "/api/announcements": {
+            "get": {
+                "tags": [
+                    "Announcements"
+                ],
+                "summary": "Announcements",
+                "description": "Get announcements",
+                "operationId": "getAnnouncements",
+                "parameters": [
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "which numbers of page that should have to displayed",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "per_page",
+                        "in": "query",
+                        "description": "which numbers of much annnouncement that should have to displayed on one page, default number is 15.",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Authenticated Success"
+                    },
+                    "400": {
+                        "description": "Bad Request / Validation Errors"
+                    },
+                    "500": {
+                        "description": "Something went wrong"
+                    }
+                },
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ]
+            }
+        },
+        "/api/users/leave_approvals/{user_id}": {
+            "get": {
+                "tags": [
+                    "Users"
+                ],
+                "summary": "Get Leave Approvals",
+                "description": "Get Leave Approvals",
+                "operationId": "leaveApprovalStatistics",
+                "parameters": [
+                    {
+                        "name": "user_id",
+                        "in": "path",
+                        "description": "user id",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Get Leave Approvals Success"
+                    },
+                    "500": {
+                        "description": "Something went wrong"
+                    }
+                },
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ]
+            }
+        },
+        "/api/users/attendance_approvals/{user_id}": {
+            "get": {
+                "tags": [
+                    "Users"
+                ],
+                "summary": "Get Manual Attendance Approvals",
+                "description": "Get Manual Attendance Approvals",
+                "operationId": "attendanceApprovalStatistics",
+                "parameters": [
+                    {
+                        "name": "user_id",
+                        "in": "path",
+                        "description": "user id",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Get Attendance Approvals Success"
+                    },
+                    "500": {
+                        "description": "Something went wrong"
+                    }
+                },
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ]
+            }
+        },
+        "/api/attendances/{year_month}": {
+            "get": {
+                "tags": [
+                    "Attendances"
+                ],
+                "summary": "Attendances",
+                "description": "Get Statistics",
+                "operationId": "getstatistics",
+                "parameters": [
+                    {
+                        "name": "year_month",
+                        "in": "path",
+                        "description": "got statistics in attendances from year and month",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Authenticated Success"
+                    },
+                    "400": {
+                        "description": "Bad Request / Validation Errors"
+                    },
+                    "500": {
+                        "description": "Something went wrong"
+                    }
+                },
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ]
+            }
+        },
+        "/api/attendances/check-in": {
+            "post": {
+                "tags": [
+                    "Attendances"
+                ],
+                "summary": "Attendances",
+                "description": "Check-in",
+                "operationId": "check-in",
+                "requestBody": {
+                    "content": {
+                        "multipart/form-data": {
+                            "schema": {
+                                "properties": {
+                                    "photo": {
+                                        "type": "file"
+                                    },
+                                    "latitude": {
+                                        "type": "number"
+                                    },
+                                    "longitude": {
+                                        "type": "number"
+                                    },
+                                    "address": {
+                                        "type": "string"
+                                    },
+                                    "note_check_in": {
+                                        "type": "string"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Authenticated Success"
+                    },
+                    "400": {
+                        "description": "Bad Request / Validation Errors"
+                    },
+                    "500": {
+                        "description": "Something went wrong"
+                    }
+                },
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ]
+            }
+        },
+        "/api/attendances/check-out": {
+            "post": {
+                "tags": [
+                    "Attendances"
+                ],
+                "summary": "Attendances",
+                "description": "Check-out",
+                "operationId": "check-out",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "": {
+                                        "properties": {
+                                            "_method": {
+                                                "type": "string"
+                                            },
+                                            "note_check_out": {
+                                                "type": "string"
+                                            }
+                                        },
+                                        "type": "object"
+                                    }
+                                },
+                                "type": "object",
+                                "example": {
+                                    "_method": "PUT",
+                                    "note_check_out": "test note"
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Authenticated Success"
+                    },
+                    "400": {
+                        "description": "Bad Request / Validation Errors"
+                    },
+                    "500": {
+                        "description": "Something went wrong"
+                    }
+                },
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ]
+            }
+        },
+        "/api/attendances/manual-attendance": {
+            "post": {
+                "tags": [
+                    "Attendances"
+                ],
+                "summary": "Attendances",
+                "description": "Manual-Attendance",
+                "operationId": "manual-attendance",
+                "requestBody": {
+                    "content": {
+                        "multipart/form-data": {
+                            "schema": {
+                                "properties": {
+                                    "photo": {
+                                        "type": "file"
+                                    },
+                                    "date": {
+                                        "type": "string",
+                                        "format": "date"
+                                    },
+                                    "check_in": {
+                                        "type": "string",
+                                        "format": "date"
+                                    },
+                                    "check_out": {
+                                        "type": "string",
+                                        "format": "date"
+                                    },
+                                    "note": {
+                                        "type": "string"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Authenticated Success"
+                    },
+                    "400": {
+                        "description": "Bad Request / Validation Errors"
+                    },
+                    "500": {
+                        "description": "Something went wrong"
+                    }
+                },
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ]
+            }
+        },
+        "/api/attendances/cancel/{id}": {
+            "post": {
+                "tags": [
+                    "Attendances"
+                ],
+                "summary": "Cancel Manual Attendance",
+                "description": "Cancel Manual Attendance",
+                "operationId": "ManualAttendanceCancel",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Attendance id",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "content": {
+                        "multipart/form-data": {
+                            "schema": {
+                                "required": [
+                                    "reason"
+                                ],
+                                "properties": {
+                                    "reason": {
+                                        "type": "string"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "201": {
+                        "description": "Successfully Cancelled Manual Attendance"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "500": {
+                        "description": "Something went wrong"
+                    }
+                },
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ]
+            }
+        },
+        "/api/attendances/approve/{id}": {
+            "post": {
+                "tags": [
+                    "Attendances"
+                ],
+                "summary": "Approve Manual Attendance",
+                "description": "Approve Manual Attendance",
+                "operationId": "ManualAttendanceApprove",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Attendance id",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "201": {
+                        "description": "Successfully Approved Manual Attendance"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "500": {
+                        "description": "Something went wrong"
+                    }
+                },
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ]
+            }
+        },
+        "/api/attendances/reject/{id}": {
+            "post": {
+                "tags": [
+                    "Attendances"
+                ],
+                "summary": "Reject Manual Attendance",
+                "description": "Reject Manual Attendance",
+                "operationId": "ManualAttendanceReject",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Attendance id",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "content": {
+                        "multipart/form-data": {
+                            "schema": {
+                                "required": [
+                                    "reason"
+                                ],
+                                "properties": {
+                                    "reason": {
+                                        "type": "string"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "201": {
+                        "description": "Successfully Rejected Manual Attendance"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "500": {
+                        "description": "Something went wrong"
+                    }
+                },
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ]
+            }
+        },
+        "/api/users/login": {
+            "post": {
+                "tags": [
+                    "User Auth"
+                ],
+                "summary": "User login",
+                "description": "Operation for user login into the mobile app",
+                "operationId": "loginUser",
+                "parameters": [
+                    {
+                        "name": "email",
+                        "in": "query",
+                        "description": "The email for login",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "password",
+                        "in": "query",
+                        "description": "The password for login",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Authenticated Success"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "401": {
+                        "description": "We dont have an account for email or wrong password"
+                    }
+                }
+            }
+        },
+        "/api/users/logout": {
+            "post": {
+                "tags": [
+                    "User Auth"
+                ],
+                "summary": "Logs out current logged in user session",
+                "operationId": "logoutUser",
+                "responses": {
+                    "200": {
+                        "description": "Token was revoked"
+                    }
+                },
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ]
+            }
+        },
+        "/api/forgotpass": {
+            "post": {
+                "tags": [
+                    "User Auth"
+                ],
+                "summary": "Forgot Password",
+                "description": "Send link reset password to target email",
+                "operationId": "forgotPassUser",
+                "parameters": [
+                    {
+                        "name": "email",
+                        "in": "query",
+                        "description": "The email for reset password",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Email Was Sent"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    }
+                }
+            }
+        },
+        "/api/users/leave-tracker/{yearmonth}": {
+            "get": {
+                "tags": [
+                    "Leave Tracker"
+                ],
+                "summary": "Getting Monthly Leave Tracker History",
+                "operationId": "getLeaveTracker",
+                "parameters": [
+                    {
+                        "name": "yearmonth",
+                        "in": "path",
+                        "description": "Year and month",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "204": {
+                        "description": "No Content"
+                    },
+                    "500": {
+                        "description": "Something went wrong"
+                    }
+                },
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ]
+            }
+        },
+        "/api/users/leave-tracker": {
+            "post": {
+                "tags": [
+                    "Leave Tracker"
+                ],
+                "summary": "Adding Leave Tracker",
+                "description": "Return id data",
+                "operationId": "addLeaveTracker",
+                "requestBody": {
+                    "content": {
+                        "multipart/form-data": {
+                            "schema": {
+                                "required": [
+                                    "employee_id",
+                                    "leave_type_id",
+                                    "leave_period_id",
+                                    "application_from_date",
+                                    "application_to_date",
+                                    "notes"
+                                ],
+                                "properties": {
+                                    "employee_id": {
+                                        "type": "number"
+                                    },
+                                    "leave_type_id": {
+                                        "type": "number"
+                                    },
+                                    "leave_period_id": {
+                                        "type": "number"
+                                    },
+                                    "application_from_date": {
+                                        "type": "string",
+                                        "format": "date"
+                                    },
+                                    "application_to_date": {
+                                        "type": "string",
+                                        "format": "date"
+                                    },
+                                    "notes": {
+                                        "type": "string"
+                                    },
+                                    "attachment": {
+                                        "type": "file"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "201": {
+                        "description": "Successful operation"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "500": {
+                        "description": "Something went wrong"
+                    }
+                },
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ]
+            }
+        },
+        "/api/users/leave-tracker/{id}/edit": {
+            "get": {
+                "tags": [
+                    "Leave Tracker"
+                ],
+                "summary": "Getting Detail Leave Tracker by Id",
+                "operationId": "getDetailLeaveTracker",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Leave Tracker Id",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "204": {
+                        "description": "No Content"
+                    },
+                    "500": {
+                        "description": "Something went wrong"
+                    }
+                },
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ]
+            }
+        },
+        "/api/leave-tracker/approve/{id}": {
+            "post": {
+                "tags": [
+                    "Leave Tracker"
+                ],
+                "summary": "Approving leave",
+                "operationId": "approveLeave",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Leave Id",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Leave Approved"
+                    },
+                    "500": {
+                        "description": "Something went wrong"
+                    }
+                },
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ]
+            }
+        },
+        "/api/leave-tracker/cancel/{id}": {
+            "post": {
+                "tags": [
+                    "Leave Tracker"
+                ],
+                "summary": "Canceling leave",
+                "operationId": "cancel",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Leave id",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "content": {
+                        "multipart/form-data": {
+                            "schema": {
+                                "properties": {
+                                    "reason": {
+                                        "type": "string"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Leave Canceled"
+                    },
+                    "500": {
+                        "description": "Something went wrong"
+                    }
+                },
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ]
+            }
+        },
+        "/api/leave-tracker/reject/{id}": {
+            "post": {
+                "tags": [
+                    "Leave Tracker"
+                ],
+                "summary": "Rejecting leave",
+                "operationId": "rejectLeave",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Leave id",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "content": {
+                        "multipart/form-data": {
+                            "schema": {
+                                "properties": {
+                                    "reason": {
+                                        "type": "string"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Leave Rejected"
+                    },
+                    "500": {
+                        "description": "Something went wrong"
+                    }
+                },
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ]
+            }
+        },
+        "/api/overtimes/{overtimeId}": {
+            "get": {
+                "tags": [
+                    "Overtimes"
+                ],
+                "summary": "Overtimes",
+                "description": "Get Overtime By Id",
+                "operationId": "getOvertimesById",
+                "parameters": [
+                    {
+                        "name": "overtimeId",
+                        "in": "path",
+                        "description": "Id overtime",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Authenticated Success"
+                    },
+                    "400": {
+                        "description": "Bad Request / Validation Errors"
+                    },
+                    "500": {
+                        "description": "Something went wrong"
+                    }
+                },
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ]
+            }
+        },
+        "/api/overtimes/today": {
+            "get": {
+                "tags": [
+                    "Overtimes"
+                ],
+                "summary": "Overtimes",
+                "description": "Get Overtime Today",
+                "operationId": "getOvertimesToday",
+                "responses": {
+                    "200": {
+                        "description": "Authenticated Success"
+                    },
+                    "400": {
+                        "description": "Bad Request / Validation Errors"
+                    },
+                    "500": {
+                        "description": "Something went wrong"
+                    }
+                },
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ]
+            }
+        },
+        "/api/overtimes/": {
+            "get": {
+                "tags": [
+                    "Overtimes"
+                ],
+                "summary": "Overtimes",
+                "description": "Get Overtime All",
+                "operationId": "getOvertimesAll",
+                "responses": {
+                    "200": {
+                        "description": "Authenticated Success"
+                    },
+                    "400": {
+                        "description": "Bad Request / Validation Errors"
+                    },
+                    "500": {
+                        "description": "Something went wrong"
+                    }
+                },
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ]
+            }
+        },
+        "/api/overtimes/request": {
+            "post": {
+                "tags": [
+                    "Overtimes"
+                ],
+                "summary": "Overtimes",
+                "description": "request-overtime",
+                "operationId": "request-overtime",
+                "requestBody": {
+                    "content": {
+                        "multipart/form-data": {
+                            "schema": {
+                                "properties": {
+                                    "date": {
+                                        "type": "string",
+                                        "format": "date"
+                                    },
+                                    "start_time": {
+                                        "type": "string",
+                                        "format": "date"
+                                    },
+                                    "end_time": {
+                                        "type": "string",
+                                        "format": "date"
+                                    },
+                                    "notes": {
+                                        "type": "string"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Authenticated Success"
+                    },
+                    "400": {
+                        "description": "Bad Request / Validation Errors"
+                    },
+                    "500": {
+                        "description": "Something went wrong"
+                    }
+                },
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ]
+            }
+        },
+        "/api/reimbursements": {
+            "get": {
+                "tags": [
+                    "Reimbursement"
+                ],
+                "summary": "Getting Reimbursement",
+                "description": "Reimbursement GET Request",
+                "operationId": "getReimbursement",
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "500": {
+                        "description": "Something went wrong"
+                    }
+                },
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ]
+            },
+            "post": {
+                "tags": [
+                    "Reimbursement"
+                ],
+                "summary": "Adding Reimbursement",
+                "description": "Reimbursement POST Request",
+                "operationId": "addReimbursement",
+                "requestBody": {
+                    "content": {
+                        "multipart/form-data": {
+                            "schema": {
+                                "required": [
+                                    "employee_id",
+                                    "start",
+                                    "end",
+                                    "images",
+                                    "note",
+                                    "name",
+                                    "type"
+                                ],
+                                "properties": {
+                                    "employee_id": {
+                                        "type": "number"
+                                    },
+                                    "start": {
+                                        "type": "string",
+                                        "format": "date"
+                                    },
+                                    "end": {
+                                        "type": "string",
+                                        "format": "date"
+                                    },
+                                    "images": {
+                                        "type": "file"
+                                    },
+                                    "note": {
+                                        "type": "string"
+                                    },
+                                    "name": {
+                                        "type": "string"
+                                    },
+                                    "type": {
+                                        "type": "string"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "201": {
+                        "description": "Success"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "500": {
+                        "description": "Something went wrong"
+                    }
+                },
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ]
+            }
+        },
+        "/api/user": {
+            "get": {
+                "tags": [
+                    "My Profile"
+                ],
+                "summary": "Get all my informations",
+                "operationId": "userProfile",
+                "responses": {
+                    "200": {
+                        "description": "Profile data fetched"
+                    },
+                    "500": {
+                        "description": "Something went wrong"
+                    }
+                },
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "securitySchemes": {
+            "bearerAuth": {
+                "type": "http",
+                "scheme": "bearer"
+            }
+        }
+    }
+}

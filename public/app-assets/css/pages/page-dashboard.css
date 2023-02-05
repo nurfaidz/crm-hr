@@ -1,0 +1,219 @@
+.approval-dashboard-title {
+    color: #4b4b4b !important;
+    font-weight: 700 !important;
+}
+
+.attendance-dashboard-time .col-4:not(:last-child) {
+    border-right: 1px solid #babfc7;
+}
+
+.attendance-dashboard-time .col-4 .custom-title {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.attendance-dashboard-time .col-4 .time-statistics div {
+    color: #4b4b4b;
+    margin-left: 11.33px;
+}
+
+.attendance-dashboard-time .col-4 .time-statistics div:first-child {
+    font-size: 49px;
+}
+
+.attendance-dashboard-time .col-4 .time-statistics div:last-child {
+    font-size: 16px;
+}
+
+.attendance-dashboard-time .col-4 #late_time {
+    color: #ff9f43;
+    font-weight: 500;
+}
+
+.attendance-dashboard-time .col-4 .check-time-statistics {
+    color: #4b4b4b;
+    font-size: 18px;
+}
+
+.attendance-dashboard-time .col-4 .check-out-time {
+    margin-top: 8px;
+}
+
+.dashboard-your-work-shift {
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+.dashboard-your-work-shift div:last-child {
+    color: #5e5873;
+    margin-left: 16px;
+}
+
+.attendance-dashboard-shift {
+    font-size: 13px;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+.attendance-dashboard-shift div:first-child {
+    color: #5e5873;
+    font-weight: 500;
+}
+
+.attendance-dashboard-shift div:last-child {
+    color: #82868b;
+}
+
+.approval-dashboard-outer-container {
+    padding-right: 10px;
+}
+
+.approval-dashboard-container {
+    overflow: auto;
+}
+
+.approval-dashboard-container::-webkit-scrollbar {
+    width: 10px;
+}
+
+.approval-dashboard-container::-webkit-scrollbar-track {
+    border: 1px solid #babfc7;
+    border-radius: 2px 2px 0 0;
+    margin: 10px 0;
+}
+
+.approval-dashboard-container::-webkit-scrollbar-thumb {
+    border: 3px solid transparent;
+    background: #c4c4c4;
+    background-clip: padding-box;
+    border-radius: 1px;
+}
+
+.announcement-dashboard-title {
+    width: 80%;
+}
+
+.announcement-dashboard-content {
+    width: 80%;
+}
+
+.dropdown-divider {
+    border-top: 1px solid #babfc7 !important;
+}
+
+.approval-dashboard-tab {
+    width: 50%;
+    font-weight: 600;
+}
+
+.approval-dashboard-tab .active {
+    color: #7367f0 !important;
+    background: none !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+.announcement-dashboard-content-container {
+    height: 230px;
+}
+
+#pills-my-submissions:last-child {
+    margin-bottom: 23px;
+}
+
+#pills-my-submissions .submissions-row {
+    margin-bottom: 9px;
+}
+
+#pills-my-submissions .submissions-separator:last-child {
+    display: none;
+}
+
+#pills-my-submissions .submissions-separator:not(:last-child) {
+    margin: 9px auto;
+}
+
+#pills-my-submissions .submissions-title {
+    font-weight: 600;
+    margin-right: 8px;
+}
+
+#pills-my-submissions .submissions-description {
+    margin-left: 8px;
+}
+
+#pills-my-submissions .submissions-status span {
+    background: #ff9f431f;
+    color: #ff9f43;
+    font-weight: 400;
+}
+
+#pills-my-submissions .submissions-description,
+#pills-my-submissions .submissions-date {
+    color: #82868b;
+    font-size: 12px;
+}
+
+#pills-employee-submissions:last-child {
+    margin-bottom: 23px;
+}
+
+#pills-employee-submissions .submissions-row {
+    margin-bottom: 9px;
+}
+
+#pills-employee-submissions .submissions-separator:last-child {
+    display: none;
+}
+
+#pills-employee-submissions .submissions-separator:not(:last-child) {
+    margin: 9px auto;
+}
+
+#pills-employee-submissions .submissions-title {
+    font-weight: 600;
+    margin-right: 8px;
+}
+
+#pills-employee-submissions .submissions-description {
+    margin-left: 8px;
+}
+
+#pills-employee-submissions .submissions-status span {
+    background: #ff9f431f;
+    color: #ff9f43;
+    font-weight: 400;
+}
+
+#pills-employee-submissions .submissions-description,
+#pills-employee-submissions .submissions-date {
+    color: #82868b;
+    font-size: 12px;
+}
+
+.approval-dashboard-container,
+.task-dashboard-container {
+    height: 248px;
+}
+
+.my-approval-dashboard-title {
+    margin-right: 8px !important;
+    color: #4b4b4b !important;
+    font-weight: 700 !important;
+}
+
+.my-approval-dashboard-subtitle {
+    margin-left: 8px !important;
+    text-transform: capitalize !important;
+    color: #4b4b4b !important;
+    font-weight: 600 !important;
+}
+
+#pending-status-cancel {
+    width: 62px;
+    height: 20px;
+    padding: 0;
+    font-weight: 600;
+    font-size: 12px;
+}

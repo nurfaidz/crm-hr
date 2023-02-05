@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html class="loading" lang="en" data-textdirection="ltr">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="description" content="Vuexy admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities.">
+    <meta name="keywords" content="admin template, Vuexy admin template, dashboard template, flat admin template, responsive admin template, web app">
+    <meta name="author" content="PIXINVENT">
+    <title>Laravel Localization - Vuexy - Bootstrap HTML admin template</title>
+    <link rel="apple-touch-icon" href="../../../app-assets/images/ico/apple-icon-120.png">
+    <link rel="shortcut icon" type="image/x-icon" href="../../../app-assets/images/ico/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600" rel="stylesheet">
+    <!-- BEGIN VENDOR CSS-->
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/vendors.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/ui/prism.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/documentation.css">
+    <!-- END VENDOR CSS-->
+    <!-- BEGIN VUEXY CSS-->
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css/bootstrap-extended.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css/colors.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css/components.css">
+    <!-- BEGIN Page Level CSS-->
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css/core/menu/menu-types/vertical-menu.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/ui/prism-treeview.css">
+    <!-- END Page Level CSS-->
+    <!-- BEGIN Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="../../../assets/css/style.css">
+    <!-- END Custom CSS-->
+</head>
+
+<body class="vertical-layout vertical-menu-modern   fixed-navbar" data-open="click" data-menu="vertical-menu-modern" data-col="">
+
+    <nav class="header-navbar navbar navbar-expand-lg align-items-center fixed-top navbar-light navbar-shadow">
+        <div class="navbar-container d-flex content">
+            <div class="bookmark-wrapper d-flex align-items-center">
+                <ul class="nav navbar-nav d-xl-none">
+                    <li class="nav-item"><a class="nav-link menu-toggle" href="javascript:void(0);"><i class="ficon" data-feather="menu"></i></a></li>
+                </ul>
+            </div>
+            <ul class="nav navbar-nav align-items-center ml-auto">
+                <li class="nav-item d-none d-sm-block"><a class="btn btn-flat-secondary btn-doc-header" href="https://pixinvent.com/demo/vuexy-html-bootstrap-admin-template/landing/" target="_blank"><i class="mr-25" data-feather="layout"></i> Live Preview</a></li>
+                <li class="nav-item"><a class="btn btn-success btn-doc-header" href="https://pixinvent.ticksy.com" target="_blank"><i class="mr-25" data-feather="life-buoy"></i> Support</a></li>
+                <li class="nav-item"><a class="btn btn-warning btn-doc-header" href="https://1.envato.market/vuexy_admin"><i class="mr-25" data-feather="shopping-cart"></i> Purchase</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ////////////////////////////////////////////////////////////////////////////-->
+
+
+    <div class="main-menu menu-fixed menu-light menu-accordion menu-shadow" data-scroll-to-active="true">
+        <div class="navbar-header">
+            <ul class="nav navbar-nav flex-row">
+                <li class="nav-item mr-auto"><a class="navbar-brand" href="index.html"><span class="brand-logo">
+                            <svg viewbox="0 0 139 95" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="24">
+                                <defs>
+                                    <lineargradient id="linearGradient-1" x1="100%" y1="10.5120544%" x2="50%" y2="89.4879456%">
+                                        <stop stop-color="#000000" offset="0%"></stop>
+                                        <stop stop-color="#FFFFFF" offset="100%"></stop>
+                                    </lineargradient>
+                                    <lineargradient id="linearGradient-2" x1="64.0437835%" y1="46.3276743%" x2="37.373316%" y2="100%">
+                                        <stop stop-color="#EEEEEE" stop-opacity="0" offset="0%"></stop>
+                                        <stop stop-color="#FFFFFF" offset="100%"></stop>
+                                    </lineargradient>
+                                </defs>
+                                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <g id="Artboard" transform="translate(-400.000000, -178.000000)">
+                                        <g id="Group" transform="translate(400.000000, 178.000000)">
+                                            <path class="text-primary" id="Path" d="M-5.68434189e-14,2.84217094e-14 L39.1816085,2.84217094e-14 L69.3453773,32.2519224 L101.428699,2.84217094e-14 L138.784583,2.84217094e-14 L138.784199,29.8015838 C137.958931,37.3510206 135.784352,42.5567762 132.260463,45.4188507 C128.736573,48.2809251 112.33867,64.5239941 83.0667527,94.1480575 L56.2750821,94.1480575 L6.71554594,44.4188507 C2.46876683,39.9813776 0.345377275,35.1089553 0.345377275,29.8015838 C0.345377275,24.4942122 0.230251516,14.560351 -5.68434189e-14,2.84217094e-14 Z" style="fill:currentColor"></path>
+                                            <path id="Path1" d="M69.3453773,32.2519224 L101.428699,1.42108547e-14 L138.784583,1.42108547e-14 L138.784199,29.8015838 C137.958931,37.3510206 135.784352,42.5567762 132.260463,45.4188507 C128.736573,48.2809251 112.33867,64.5239941 83.0667527,94.1480575 L56.2750821,94.1480575 L32.8435758,70.5039241 L69.3453773,32.2519224 Z" fill="url(#linearGradient-1)" opacity="0.2"></path>
+                                            <polygon id="Path-2" fill="#000000" opacity="0.049999997" points="69.3922914 32.4202615 32.8435758 70.5039241 54.0490008 16.1851325"></polygon>
+                                            <polygon id="Path-21" fill="#000000" opacity="0.099999994" points="69.3922914 32.4202615 32.8435758 70.5039241 58.3683556 20.7402338"></polygon>
+                                            <polygon id="Path-3" fill="url(#linearGradient-2)" opacity="0.099999994" points="101.428699 0 83.0667527 94.1480575 130.378721 47.0740288"></polygon>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg></span>
+                        <h2 class="brand-text">Vuexy</h2>
+                    </a></li>
+                <li class="nav-item nav-toggle"><a class="nav-link modern-nav-toggle pr-0" data-toggle="collapse"><i class="d-block d-xl-none text-primary toggle-icon font-medium-4" data-feather="x"></i><i class="d-none d-xl-block collapse-toggle-icon font-medium-4  text-primary" data-feather="disc" data-ticon="disc"></i></a></li>
+            </ul>
+        </div>
+        <div class="shadow-bottom"></div>
+        <div class="main-menu-content">
+            <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
+                <li class=" nav-item"><a href="index.html"><i data-feather="home"></i><span class="menu-title" data-i18n="">Introduction</span></a>
+                </li>
+                <li class=" nav-item"><a href="documentation-license.html"><i data-feather="shield"></i><span class="menu-title" data-i18n="">License</span></a>
+                </li>
+                <li class=" nav-item"><a href="documentation-folder-structure.html"><i data-feather="folder"></i><span class="menu-title" data-i18n="">Folder Structure</span></a>
+                </li>
+                <li class=" nav-item"><a href="documentation-gulp.html"><i data-feather="settings"></i><span class="menu-title" data-i18n="">Building Tools</span></a>
+                </li>
+                <li class=" nav-item"><a href="documentation-styles-customization.html"><i data-feather="check-square"></i><span class="menu-title" data-i18n="">Styles Customization</span></a>
+                </li>
+                <li class=" nav-item"><a href="documentation-javascript-customization.html"><i data-feather="file"></i><span class="menu-title" data-i18n="">JavaScript Customization</span></a>
+                </li>
+                <li class=" nav-item"><a href="documentation-html-structure.html"><i data-feather="code"></i><span class="menu-title" data-i18n="">HTML Structure</span></a>
+                </li>
+                <li class=" nav-item"><a href="documentation-starter-kit.html"><i data-feather="zap"></i><span class="menu-title" data-i18n="">Starter Kit</span></a>
+                </li>
+                <li class=" nav-item"><a href="#"><i data-feather="layout"></i><span class="menu-title" data-i18n="">Layouts</span></a>
+                    <ul class="menu-content">
+                        <li><a class="menu-item" href="documentation-layout-empty.html">Layout Empty</a>
+                        </li>
+                        <li><a class="menu-item" href="documentation-layout-collapsed-menu.html">Collapsed Menu</a>
+                        </li>
+                        <li><a class="menu-item" href="documentation-layout-boxed.html">Layout Boxed</a>
+                        </li>
+                        <li><a class="menu-item" href="documentation-layout-without-menu.html">Without Menu</a>
+                        </li>
+                        <li><a class="menu-item" href="documentation-layout-blank.html">Layout Blank</a>
+                        </li>
+                        <li><a class="menu-item" href="documentation-content-detached-left-sidebar.html">Content Detached Left Sidebar</a>
+                        </li>
+                        <li><a class="menu-item" href="documentation-content-detached-right-sidebar.html">Content Detached Right Sidebar</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class=" nav-item"><a href="documentation-faq.html"><i data-feather="help-circle"></i><span class="menu-title" data-i18n="">FAQs</span></a>
+                </li>
+                <li class=" nav-item"><a href="#"><i data-feather="edit-2"></i><span class="menu-title" data-i18n="">Laravel</span></a>
+                    <ul class="menu-content">
+                        <li><a class="menu-item" href="documentation-laravel-folder-structure.html">Laravel Folder Structure</a>
+                        </li>
+                        <li><a class="menu-item" href="documentation-laravel-installation.html">Laravel Installation</a>
+                        </li>
+                        <li><a class="menu-item" href="documentation-laravel-integration.html">Laravel Integration</a>
+                        </li>
+                        <li><a class="menu-item" href="documentation-laravel-passport.html">Laravel Passport</a>
+                        </li>
+                        <li><a class="menu-item" href="documentation-laravel-sanctum.html">Laravel Sanctum</a>
+                        </li>
+                        <li class="active"><a class="menu-item" href="documentation-laravel-localization.html">Laravel Localization</a>
+                        </li>
+                        <li><a class="menu-item" href="documentation-laravel-ui.html">Laravel UI</a>
+                        </li>
+                        <li><a class="menu-item" href="documentation-laravel-menu.html">Laravel Menu</a>
+                        </li>
+                        <li><a class="menu-item" href="documentation-laravel-search.html">Laravel Search</a>
+                        </li>
+                        <li><a class="menu-item" href="documentation-laravel-homestead.html">Laravel Homestead</a>
+                        </li>
+                        <li><a class="menu-item" href="documentation-laravel-acl.html">Laravel ACL</a>
+                        </li>
+                        <li><a class="menu-item" href="documentation-laravel-migration.html">Laravel Migration</a>
+                        </li>
+                        <li><a class="menu-item" href="documentation-laravel-sail-docker.html">Laravel Sail &amp; Docker</a>
+                        </li>
+                        <li><a class="menu-item" href="documentation-laravel-deployment.html">Laravel Deployment</a>
+                        </li>
+                        <li><a class="menu-item" href="documentation-laravel-faq.html">Laravel FAQs</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class=" nav-item"><a href="documentation-apps.html"><i data-feather="server"></i><span class="menu-title" data-i18n="">Apps</span></a>
+                </li>
+                <li class=" nav-item"><a href="#"><i data-feather="grid"></i><span class="menu-title" data-i18n="">UI</span></a>
+                    <ul class="menu-content">
+                        <li><a class="menu-item" href="documentation-card.html">Cards</a>
+                        </li>
+                        <li><a class="menu-item" href="documentation-colors.html">Colors</a>
+                        </li>
+                        <li><a class="menu-item" href="documentation-icons.html">Icons</a>
+                        </li>
+                        <li><a class="menu-item" href="documentation-utilities.html">Utilities</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class=" nav-item"><a href="documentation-components.html"><i data-feather="box"></i><span class="menu-title" data-i18n="">Components</span></a>
+                </li>
+                <li class=" nav-item"><a href="documentation-extensions.html"><i data-feather="edit"></i><span class="menu-title" data-i18n="">Extensions</span></a>
+                </li>
+                <li class=" nav-item"><a href="#"><i data-feather="copy"></i><span class="menu-title" data-i18n="">Forms</span></a>
+                    <ul class="menu-content">
+                        <li><a class="menu-item" href="documentation-form-elements.html">Form Elements</a>
+                        </li>
+                        <li><a class="menu-item" href="documentation-form-layouts.html">Form Layouts</a>
+                        </li>
+                        <li><a class="menu-item" href="documentation-form-wizard.html">Form Wizard</a>
+                        </li>
+                        <li><a class="menu-item" href="documentation-form-validation.html">Form Validation</a>
+                        </li>
+                        <li><a class="menu-item" href="documentation-form-repeater.html">Form Repeater</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class=" nav-item"><a href="#"><i data-feather="server"></i><span class="menu-title" data-i18n="">Tables</span></a>
+                    <ul class="menu-content">
+                        <li><a class="menu-item" href="documentation-bootstrap-tables.html">Tables</a>
+                        </li>
+                        <li><a class="menu-item" href="documentation-datatables.html">Data Tables</a>
+                        </li>
+                        <li><a class="menu-item" href="documentation-aggrid.html">AgGrid</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class=" nav-item"><a href="#.html"><i data-feather="pie-chart"></i><span class="menu-title" data-i18n="">Charts</span></a>
+                    <ul class="menu-content">
+                        <li><a class="menu-item" href="documentation-charts-apex.html">Apex Chart</a>
+                        </li>
+                        <li><a class="menu-item" href="documentation-charts-chartjs.html">Chart JS</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class=" nav-item"><a href="documentation-maps.html"><i data-feather="map"></i><span class="menu-title" data-i18n="">Maps</span></a>
+                </li>
+                <li class=" nav-item"><a href="#"><i data-feather="layers"></i><span class="menu-title" data-i18n="">Other</span></a>
+                    <ul class="menu-content">
+                        <li><a class="menu-item" href="documentation-sources-credits.html">Sources &amp; Credits</a>
+                        </li>
+                        <li><a class="menu-item" href="https://pixinvent.ticksy.com/">Support</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="app-content content">
+        <div class="content-wrapper">
+            <div class="content-header row">
+                <div class="content-header-left col-12 mb-2">
+                    <div class="row breadcrumbs-top">
+                        <div class="col-12">
+                            <h2 class="content-header-title float-left mb-0">Laravel Localization</h2>
+                            <div class="breadcrumb-wrapper">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="index.html">Home</a>
+                                    </li>
+                                    <li class="breadcrumb-item"><a href="#">Laravel</a>
+                                    </li>
+                                    <li class="breadcrumb-item active">Laravel Localization
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-body">
+                <!-- laravel Localization -->
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title">Localization</h4>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-body">
+                            <h5>Introduction</h5>
+                            <p>
+                                Laravel's <a href="https://laravel.com/docs/6.x/localization" target="_blank">localization</a> features provide
+                                a convenient way to retrieve strings in various languages, allowing you
+                                to easily support multiple languages within your application. Language strings are stored in files within the
+                                <code>resources/lang</code> directory. Within this directory there should be a subdirectory for each
+                                language supported by
+                                the application:
+                            </p>
+                            <pre class="language-treeview">
+        <code class="language-treeview">
+          resources/
+          ├── lang/
+          |   ├── en/
+          |   |   ├── locale.php
+          |   ├── de/
+          |   |   ├── locale.php
+        </code>
+      </pre>
+                            <p class="mt-2">All language files return an array of keyed strings. For example:</p>
+                            <pre class="language-php">
+        <code class="language-php">
+          &lt;?php
+
+          return [
+              "Dashboard" => "Instrumententafel",
+              "Analytics" => "Analytics",
+          ];
+        </code>
+      </pre>
+                            <h5 class="mt-2">Configuring The Locale</h5>
+                            <p>The default language for your application is stored in the <code>config/app.php</code> configuration file.
+                                You may modify this value to suit the needs of your application. You may also change the active language at
+                                runtime using the <code>setLocale</code> method on the <code>App</code> facade:</p>
+                            <pre class="language-php">
+          <code class="language-php">
+            Route::get('welcome/{locale}', function ($locale) {
+              App::setLocale($locale);
+
+              //
+          });
+          </code>
+      </pre>
+                            <p class="mt-2">You may configure a "fallback language", which will be used when the active language does not
+                                contain a given translation string. Like the default language, the fallback language is also configured in the
+                                <code>config/app.php</code> configuration file:
+                            </p>
+                            <pre class="language-php">
+          <code class="language-php">
+            'fallback_locale' => 'en',
+          </code>
+      </pre>
+                            <h5 class="mt-2">Defining Translation Strings</h5>
+                            <p>Typically, translation strings are stored in files within the <code>resources/lang</code> directory. Within
+                                this directory
+                                there should be a subdirectory for each language supported by the application:</p>
+
+                            <h5 class="mt-2">Retrieving Translation Strings</h5>
+                            <p>You may retrieve lines from language files using the <code> __</code> helper function. The
+                                <code>__</code> method accepts the file and key of the translation string as its first argument. For
+                                example,
+                                let's retrieve the welcome translation string from the <code>resources/lang/en/locale.php</code> language
+                                file:
+                            </p>
+                            <pre class="language-php">
+      <code class="language-php">
+        echo __('locale.welcome');
+      </code>
+    </pre>
+                            <p class="mt-2">If you are using the Blade templating engine, you may use the {{ }} syntax to echo the translation
+                                string or use the @lang directive:</p>
+                            <pre class="language-php">
+        <code class="language-php">
+          {{ __('messages.welcome') }}
+
+          @lang('messages.welcome')
+        </code>
+      </pre>
+                            <p>Now all set to work localization in simple project.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title">Localization in Vuexy Laravel</h4>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-body">
+                            <p>
+                                In Vuexy laravel, We provide a dropdown to switch language you can find it in the navbar. How does it work?
+                                When we select a language from dropdown-menu we call a Route which calls a controller's function which then
+                                put selected language in session. We have created a middleware that sets the localization value from the session
+                                variable. We set the session's lifetime 30min in the <code>.env</code> file. It sounds a little messy. Let's
+                                find out how to do it.
+                            </p>
+                            <p>We have to create a Controller to check selected language is available or not in our template and then save it
+                                to session variable. Run below command.</p>
+                            <pre class="language-php">
+        <code class="language-php">
+          php artisan make:controller LanguageController
+        </code>
+      </pre>
+                            <p class="mt-2">Use the below code in <code>LanguageController</code> file in
+                                <code>App/Http/Controllers.</code>
+                            </p>
+                            <pre class="language-php">
+        <code class="language-php">
+          &lt;?php
+
+            namespace App\Http\Controllers;
+
+            use App\Http\Controllers\Controller;
+            use Illuminate\Http\Request;
+
+            class LanguageController extends Controller
+            {
+                //
+                public function swap($locale){
+                    // available language in template array
+                    $availLocale=['en'=>'en', 'fr'=>'fr','de'=>'de','pt'=>'pt'];
+                    // check for existing language
+                    if(array_key_exists($locale,$availLocale)){
+                        session()->put('locale',$locale);
+                    }
+                    return redirect()->back();
+                }
+            }
+
+        </code>
+      </pre>
+                            <p class="mt-2">
+                                We have to define Route for language switching in routes/web.php file.
+                            </p>
+                            <pre class="language-php">
+        <code class="language-php">
+          &lt;?php
+            use App\Http\Controllers\LanguageController;
+          // locale Route
+          Route::get('lang/{locale}',[LanguageController::class,'swap']);
+        </code>
+      </pre>
+                            <p class="mt-2">Now we need a middleware to set <code>app()->setLocale()</code> variable gloabaly. Run below
+                                cammand to create a middleware.</p>
+                            <pre class="language-php">
+          <code class="language-php">
+            php artisan make:middleware LocaleMiddleware
+          </code>
+        </pre>
+                            <p class="mt-2">You can find this middleware in <code>App\Http\Middleware</code></p>
+                            <pre class="language-php">
+        <code class="language-php">
+          &lt;?php
+
+            namespace App\Http\Middleware;
+
+            use Closure;
+
+            class LocaleMiddleware
+            {
+                /**
+                * Handle an incoming request.
+                *
+                * @param  \Illuminate\Http\Request  $request
+                * @param  \Closure  $next
+                * @return mixed
+                */
+                public function handle($request, Closure $next)
+                {
+                    // available language in template array
+                    $availLocale=['en'=>'en', 'fr'=>'fr','de'=>'de','pt'=>'pt'];
+
+                    // Locale is enabled and allowed to be change
+                    if(session()->has('locale') && array_key_exists(session()->get('locale'),$availLocale)){
+                        // Set the Laravel locale
+                        app()->setLocale(session()->get('locale'));
+                    }
+                    return $next($request);
+                }
+            }
+        </code>
+      </pre>
+                            <p class="mt-2">You must have to mention middleware in the <code>App\Http\kernel.php</code> file. Use the
+                                <code>\App\Http\Middleware\LocaleMiddleware::class,</code> line in kernel.php file.
+                            </p>
+                            <pre class="language-php">
+          <code class="language-php">
+            protected $middlewareGroups = [
+            'web' => [
+
+                \App\Http\Middleware\LocaleMiddleware::class,
+            ],
+
+            'api' => [
+                'throttle:60,1',
+                'bindings',
+            ],
+        ];
+          </code>
+      </pre>
+                            <p class="mt-2">
+                                Now we have to set the view. We provide language switch dropdown in navabar.blade.php.
+                            </p>
+                            <pre class="language-php">
+        <code class="language-php">
+          &lt;a class="dropdown-toggle nav-link" id="dropdown-flag" href="#" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false"&gt;
+                &lt;i class="flag-icon flag-icon-us"&gt;&lt;/i&gt;
+                &lt;span class="selected-language"&gt;English&lt;/span&gt;
+              &lt;/a&gt;
+              &lt;div class="dropdown-menu" aria-labelledby="dropdown-flag"&gt;
+                &lt;a class="dropdown-item" href="{{url('lang/en')}}" data-language="en"&gt;
+                  &lt;i class="flag-icon flag-icon-us"&gt;&lt;/i&gt;English
+                &lt;/a&gt;
+                &lt;a class="dropdown-item" href="{{url('lang/fr')}}" data-language="fr"&gt;
+                  &lt;i class="flag-icon flag-icon-fr"&gt;&lt;/i&gt;French
+                &lt;/a&gt;
+                &lt;a class="dropdown-item" href="{{url('lang/de')}}" data-language="de"&gt;
+                  &lt;i class="flag-icon flag-icon-de"&gt;&lt;/i&gt;German
+                &lt;/a&gt;
+                &lt;a class="dropdown-item" href="{{url('lang/pt')}}" data-language="pt"&gt;
+                  &lt;i class="flag-icon flag-icon-pt"&gt;&lt;/i&gt;Portuguese
+                &lt;/a&gt;
+              &lt;/div&gt;
+        </code>
+      </pre>
+                            <p class="mt-2">We need to retrieve lines from language files using the <code>__</code> helper function. The
+                                <code>__</code> method accepts the file and key of the translation string as its first argument.
+                                We are using the Blade templating engine, We use the <code>{{ }}</code> syntax to echo the translation
+                                string or use the <code>@lang</code> directive:
+                            </p>
+                            <h6 class="mt-2">Resources/views/panels</h6>
+                            <p>sidebar.blade.php</p>
+                            <pre class="language-php">
+        <code class="language-php">
+          &lt;div class="main-menu-content"&gt;
+            &lt;ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation"&gt;
+              {{-- Foreach menu item starts --}}
+              @if(isset($menuData[0]))
+              @foreach($menuData[0]->menu as $menu)
+              @if(isset($menu->navheader))
+              <li class="navigation-header">
+                <span>{{ $menu->navheader }}</span>
+              </li>
+              @else
+              {{-- Add Custom Class with nav-item --}}
+              @php
+              $custom_classes = "";
+              if(isset($menu->classlist)) {
+              $custom_classes = $menu->classlist;
+              }
+              $translation = "";
+              if(isset($menu->i18n)){
+              $translation = $menu->i18n;
+              }
+              @endphp
+              &lt;li class="nav-item {{ (request()->is($menu->url)) ? 'active' : '' }} {{ $custom_classes }}"&gt;
+                &lt;a href="{{ $menu-&gt;url }}"&gt;
+                  &lt;i class="{{ $menu-&gt;icon }}"&gt;&lt;/i&gt;
+                  &lt;span class="menu-title" data-i18n="{{ $translation }}"&gt;{{ __('locale.'.$menu-&gt;name) }}&lt;/span&gt;
+                  @if (isset($menu-&gt;badge))
+                  &lt;?php $badgeClasses = "badge badge-pill badge-primary float-right" ?&gt;
+                  &lt;span
+                    class="{{ isset($menu-&gt;badgeClass) ? $menu-&gt;badgeClass.' test' : $badgeClasses.' notTest' }} "&gt;{{$menu-&gt;badge}}&lt;/span&gt;
+                  @endif
+                &lt;/a&gt;
+                @if(isset($menu-&gt;submenu))
+                @include('panels/submenu', ['menu' =&gt; $menu-&gt;submenu])
+                @endif
+              &lt;/li&gt;
+              @endif
+              @endforeach
+              @endif
+              {{-- Foreach menu item ends --}}
+            &lt;/ul&gt;
+          &lt;S/div&gt;
+        &lt;/div&gt;
+        </code>
+      </pre>
+                            <p class="mt-2">submenu.blade.php</p>
+                            <pre class="language-php">
+        <code class="language-php">
+          {{-- For submenu --}}
+            &lt;ul class="menu-content"&gt;
+                @if(isset($menu))
+                @foreach($menu as $submenu)
+                &lt;?php
+                        $submenuTranslation = "";
+                        if(isset($menu-&gt;i18n)){
+                            $submenuTranslation = $menu-&gt;i18n;
+                        }
+                    ?&gt;
+                &lt;li class="{{ (request()-&gt;is($submenu-&gt;url)) ? 'active' : '' }}"&gt;
+                    &lt;a href="{{ $submenu-&gt;url }}"&gt;
+                        &lt;i class="{{ isset($submenu-&gt;icon) ? $submenu-&gt;icon : "" }}"&gt;&lt;/i&gt;
+                        &lt;span class="menu-title" data-i18n="{{ $submenuTranslation }}"&gt;{{ __('locale.'.$submenu-&gt;name) }}&lt;/span&gt;
+                    &lt;/a&gt;
+                    @if (isset($submenu-&gt;submenu))
+                    @include('panels/submenu', ['menu' =&gt; $submenu-&gt;submenu])
+                    @endif
+                &lt;/li&gt;
+                @endforeach
+                @endif
+            &lt;/ul&gt;
+        </code>
+      </pre>
+                            <P class="mt-2">HorizontalMenu.blade.php</P>
+                            <pre class="language-php">
+        <code class="language-php">
+             &lt;!-- Horizontal menu content--&gt;
+          &lt;div class="navbar-container main-menu-content" data-menu="menu-container"&gt;
+            &lt;ul class="nav navbar-nav" id="main-menu-navigation" data-menu="menu-navigation"&gt;
+              {{-- Foreach menu item starts --}}
+              @if(isset($menuData[1]))
+              @foreach($menuData[1]-&gt;menu as $menu)
+              @php
+              $custom_classes = "";
+              if(isset($menu-&gt;classlist)) {
+              $custom_classes = $menu-&gt;classlist;
+              }
+              $translation = "";
+              if(isset($menu-&gt;i18n)){
+              $translation = $menu-&gt;i18n;
+              }
+              @endphp
+              &lt;li class="dropdown nav-item {{ (request()-&gt;is($menu-&gt;url)) ? 'active' : '' }} {{ $custom_classes }}"
+                data-menu="dropdown"&gt;
+                &lt;a href="{{ $menu-&gt;url }}" class="dropdown-toggle nav-link" data-toggle="dropdown"&gt;
+                  &lt;i class="{{ $menu-&gt;icon }}"&gt;&lt;/i&gt;
+                  &lt;span data-i18n="{{ $translation }}"&gt;{{ __('locale.'.$menu-&gt;name) }}&lt;/span&gt;
+                &lt;/a&gt;
+                @if(isset($menu-&gt;submenu))
+                @include('panels/horizontalSubmenu', ['menu' =&gt; $menu-&gt;submenu])
+                @endif
+              &lt;/li&gt;
+              @endforeach
+              @endif
+              {{-- Foreach menu item ends --}}
+            &lt;/ul&gt;
+          &lt;/div&gt;
+        </code>
+      </pre>
+                            <p class="mt-2">horizontalSubmenu.blade.php</p>
+                            <pre class="language-php">
+        <code class="language-php">
+          {{-- For Horizontal submenu --}}
+            &lt;ul class="dropdown-menu"&gt;
+              @if(isset($menu))
+              @foreach($menu as $submenu)
+              &lt;?php
+            $custom_classes = "";
+            if(isset($submenu-&gt;classlist)) {
+                $custom_classes = $submenu-&gt;classlist;
+            }
+            $submenuTranslation = "";
+            if(isset($menu-&gt;i18n)){
+                $submenuTranslation = $menu-&gt;i18n;
+            }
+              ?&gt;
+              &lt;li
+                class="{{ (request()-&gt;is($submenu-&gt;url)) ? 'active' : '' }} {{ (isset($submenu-&gt;submenu)) ? "dropdown dropdown-submenu" : '' }} {{ $custom_classes }}"&gt;
+                &lt;a href="{{ $submenu-&gt;url }}" class="dropdown-item {{ (isset($submenu-&gt;submenu)) ? "dropdown-toggle" : '' }}"
+                  {{ (isset($submenu-&gt;submenu)) ? 'data-toggle=dropdown' : '' }}&gt;
+                  &lt;i class="{{ isset($submenu-&gt;icon) ? $submenu-&gt;icon : "" }}"&gt;&lt;/i&gt;
+                  &lt;span data-i18n="{{ $submenuTranslation }}"&gt;{{ __('locale.'.$submenu-&gt;name) }}&lt;/span&gt;
+                &lt;/a&gt;
+                @if (isset($submenu-&gt;submenu))
+                @include('panels/horizontalSubmenu', ['menu' =&gt; $submenu-&gt;submenu])
+                @endif
+              &lt;/li&gt;
+              @endforeach
+              @endif
+            &lt;/ul&gt;
+        </code>
+      </pre>
+                        </div>
+                    </div>
+                </div>
+                <!-- how to add a new language -->
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title">How to add new language?</h4>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-body">
+                            <p>1: To add a new language in whole template first we need to create a locale.php file in
+                                <code>resources/lang/</code> which return an array with key and value pair.
+                            </p>
+                            <p>resources/lang/de/locale.php</p>
+                            <pre class="language-php">
+        <code class="language-php">
+          &lt;?php
+
+          return [
+              "Dashboard" => "Instrumententafel",
+              "Analytics" => "Analytics",
+              "eCommerce" => "eCommerce",
+              "Apps" => "Anwendungen",
+              "UI Elements" => "UI Elemente",
+              "Forms & Tables" => "Formulare und Tabellen",
+              "Pages" => "Seiten",
+              "Charts & Maps" => "Karten & Landkarten",
+              "Others" => "Andere",
+              "Email" => "Email",
+
+        </code>
+      </pre>
+                            <p class="mt-2">2: Now we need to mention our new language in controller and middleware which we already created.
+                            </p>
+                            <p>App/Http/Controllers/LanguageController.php</p>
+                            <pre class="language-php">
+        <code class="language-php">
+        // available language in template array
+        $availLocale=['en'=>'en', 'fr'=>'fr','de'=>'de','pt'=>'pt']; //mention your new language as key and value pair.
+        </code>
+      </pre>
+                            <p class="mt-2">App/Http/Middleware/LocaleMiddleware.php</p>
+                            <pre class="language-php">
+        <code class="language-php">
+          // available language in template array
+          $availLocale=['en'=>'en', 'fr'=>'fr','de'=>'de','pt'=>'pt']; //mention your new language as key and value pair.
+        </code>
+      </pre>
+                            <p class="mt-2">3: If you want to set your new language as default language using configuration variable then
+                                you'll need to do below changes.</p>
+                            <p>App/Helpers/helpers.php</strong></p>
+                            <p>Add your new language in allOption array as key and value pair.</p>
+                            <pre class="language-php">
+        <code class="language-php">
+          // All options available in the template
+          $allOptions = [
+
+              'defaultLanguage'=>array('en'=>'en','fr'=>'fr','de'=>'de','pt'=>'pt'),
+
+          ];
+
+        </code>
+      </pre>
+                            <p class="mt-2">4: Now you can set your new language as default of whole Template.</p>
+                            <p>config/custom.php</p>
+                            <pre class="language-php">
+        <code class="language-php">
+          &lt;?php
+            return [
+                'custom' => [
+
+                    'defaultLanguage'=>'en',    //en(default)/de/pt/fr here are four optional language provided in theme
+
+                ],
+        </code>
+      </pre>
+                            <p>Your new language is successfully added, Now it's ready to use.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- how to remove existing language -->
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title">How to remove existing language?</h4>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-body">
+                            <p>1: To remove a existing language in whole template first we need to delete language folder from
+                                <code>resources/lang/</code>.
+                            </p>
+
+                            <pre class="language-treeview">
+        <code class="language-treeview">
+          resources/
+          ├── lang/
+          |   ├── en/
+          |   |   ├── locale.php
+          |   ├── de/
+          |   |   ├── locale.php
+        </code>
+      </pre>
+                            <p class="mt-2">2: Now we need to delete existing language in controller and middleware which is already created.
+                            </p>
+                            <p>App/Http/Controllers/LanguageController.php</p>
+                            <p>Remove your existing language from the availLocale array.</p>
+                            <pre class="language-php">
+        <code class="language-php">
+          // available language in template array
+        $availLocale=['en'=>'en', 'fr'=>'fr','de'=>'de','pt'=>'pt'];
+
+        </code>
+      </pre>
+                            <p>App/Http/Middleware/LocaleMiddleware.php</p>
+                            <p>Remove your existing language from the availLocale array.</p>
+                            <pre class="language-php">
+        <code class="language-php">
+          // available language in template array
+          $availLocale=['en'=>'en', 'fr'=>'fr','de'=>'de','pt'=>'pt'];
+        </code>
+      </pre>
+                            <p class="mt-2">3: You also need to remove this language from helper.php file.</p>
+                            <p>App/Helpers/helpers.php</p>
+                            <p>remove language from the allOption array.</p>
+                            <pre class="language-php">
+        <code class="language-php">
+          // All options available in the template
+          $allOptions = [
+
+              'defaultLanguage'=>array('en'=>'en','fr'=>'fr','de'=>'de','pt'=>'pt'),
+
+          ];
+        </code>
+      </pre>
+                            <p>Now existing language has been removed from whole template.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- /laravel Localization -->
+
+            </div>
+        </div>
+    </div>
+    <!-- ////////////////////////////////////////////////////////////////////////////-->
+
+
+    <footer class="footer footer-static footer-light">
+        <p class="clearfix mb-0"><span class="float-md-left d-block d-md-inline-block mt-25">COPYRIGHT &copy; 2021<a class="ml-25" href="https://1.envato.market/pixinvent_portfolio" target="_blank">Pixinvent</a><span class="d-none d-sm-inline-block">, All rights Reserved</span></span><span class="float-md-right d-none d-md-block">Hand-crafted & Made with<i data-feather="heart"></i></span>
+            <button class="btn btn-primary btn-icon scroll-top" type="button"><i data-feather="arrow-up"></i></button>
+        </p>
+    </footer>
+
+    <script src="../../../app-assets/vendors/js/vendors.min.js"></script>
+    <script src="../../../app-assets/vendors/js/ui/prism.min.js" type="text/javascript"></script>
+    <script src="../../../app-assets/vendors/js/ui/affix.js" type="text/javascript"></script>
+    <script src="../../../app-assets/js/core/app-menu.js"></script>
+    <script src="../../../app-assets/js/core/app.js"></script>
+    <script src="../../../app-assets/js/scripts/documentation.js" type="text/javascript"></script>
+    <script src="../../../app-assets/vendors/js/ui/prism-treeview.js" type="text/javascript"></script>
+    <script>
+        $(window).on('load', function() {
+            if (feather) {
+                feather.replace({
+                    width: 14,
+                    height: 14
+                });
+            }
+        })
+    </script>
+</body>
+
+</html>

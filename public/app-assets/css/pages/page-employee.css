@@ -1,0 +1,128 @@
+.form-label {
+  font-weight: bold;
+}
+
+.btn-prev {
+  color: #7367f0;
+}
+
+.bs-stepper-header {
+  justify-content: space-between;
+}
+
+.step-trigger {
+  background-color: #f6f7f8 !important;
+  border: 2px solid #f6f7f8 !important;
+  border-radius: 5px !important;
+  padding: 2rem 5rem 2rem 1rem !important;
+  opacity: 1 !important;
+  width: 21rem !important;
+  position: relative !important;
+}
+
+.active-step-trigger {
+  background-color: #eeecfd !important;
+  border: 2px solid #7367f0 !important;
+}
+
+.disable-step-trigger {
+  background-color: #eeecfd !important;
+  border: 2px solid #7367f0 !important;
+}
+
+.danger-step-trigger {
+  background-color: #ea5455 !important;
+  border: 2px solid #7367f0 !important;
+}
+
+.done-step-trigger {
+  background-color: #7367f0 !important;
+  border: 2px solid #7367f0 !important;
+}
+
+.bs-stepper-box {
+  background-color: #f6f7f8 !important;
+  border: 3px solid #babfc7 !important;
+  border-radius: 50% !important;
+  box-shadow: none !important;
+  width: 2rem !important;
+  height: 2rem !important;
+  position: absolute !important;
+  left: 1rem !important;
+}
+
+.active-bs-stepper-box {
+  background-color: #eeecfd !important;
+  border: 3px solid #7367f0 !important;
+}
+
+.disable-bs-stepper-box {
+  background-color: #7367f01f !important;
+  border: 3px solid white !important;
+}
+
+.danger-bs-stepper-box {
+  background-color: #ea5455 !important;
+  border: 3px solid white !important;
+}
+
+.done-bs-stepper-box {
+  background-color: #7367f0 !important;
+  border: 3px solid white !important;
+}
+
+.bs-stepper-number {
+  color: #babfc7 !important;
+  font-weight: 600 !important;
+}
+
+.active-bs-stepper-number {
+  color: #7367f0 !important;
+}
+
+.disable-bs-stepper-number {
+  color: white !important;
+}
+
+.danger-bs-stepper-number {
+  color: white !important;
+}
+
+.done-bs-stepper-number {
+  color: white !important;
+}
+
+.bs-stepper-title {
+  color: #babfc7 !important;
+  transform: translateY(-30%);
+  position: absolute !important;
+  left: 3.5rem !important;
+  top: 45% !important;
+}
+
+.active-bs-stepper-title {
+  color: #7367f0 !important;
+}
+
+.disable-bs-stepper-title {
+  color: white !important;
+}
+
+.danger-bs-stepper-title {
+  color: white !important;
+}
+
+.done-bs-stepper-title {
+  color: white !important;
+}
+
+.first-middle-line,
+.second-middle-line {
+  border-bottom: 2px #babfc7 dashed;
+  transform: translateY(-50%);
+  flex: 1;
+}
+
+.active-middle-line {
+  border-bottom: 2px #7367f0 dashed;
+}

@@ -1,0 +1,373 @@
+.dashboard-link {
+    color: #7367f0;
+}
+
+.this-page-link {
+    color: #9e9e9e;
+}
+
+.dashboard-link,
+.this-page-link {
+    font-weight: 700;
+    margin-left: 4px;
+}
+.medical-tracker-reimbursement {
+    color: #404040;
+    font-weight: 500;
+    font-size: 21px;
+}
+
+.medical-reimbursement-your-statistic {
+    border-radius: 6px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12);
+    height: 160px;
+    margin-top: 40px;
+}
+
+.medical-reimbursement-your-statistic .outside .card-header h4 {
+    color: #5e5873;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.medical-reimbursement-your-statistic .outside .card-header input {
+    border: 2px solid #7367f0;
+    border-radius: 8px;
+    padding: 10px;
+    width: 96px;
+    height: 38px;
+}
+
+.medical-reimbursement-your-statistic .outside .card-header input:focus {
+    outline: none;
+}
+
+.medical-reimbursement-your-statistic .outside .card-header .yearpicker-container {
+    box-shadow: none;
+    border: 1px solid #7367f0;
+    margin-left: -183.5px;
+}
+
+.medical-reimbursement-your-statistic .outside .card-header .yearpicker-container .yearpicker-header {
+    background: #7367f0;
+    color: white;
+}
+
+.medical-reimbursement-your-statistic .outside .card-header .yearpicker-container .yearpicker-header .yearpicker-prev,
+.medical-reimbursement-your-statistic .outside .card-header .yearpicker-container .yearpicker-header .yearpicker-next {
+    margin-top: -4px;
+}
+
+.medical-reimbursement-your-statistic .outside .card-header .yearpicker-container .yearpicker-header .yearpicker-prev:hover,
+.medical-reimbursement-your-statistic .outside .card-header .yearpicker-container .yearpicker-header .yearpicker-next:hover {
+    color: white;
+}
+
+.medical-reimbursement-your-statistic .outside .card-header .yearpicker-container .yearpicker-header .yearpicker-current {
+    font-weight: 500;
+}
+
+.medical-reimbursement-your-statistic .outside .card-header .yearpicker-container .yearpicker-body .yearpicker-year {
+    color: #6e6b7b;
+}
+
+.medical-reimbursement-your-statistic .outside .card-header .yearpicker-container .yearpicker-body .yearpicker-year .selected,
+.medical-reimbursement-your-statistic .outside .card-header .yearpicker-container .yearpicker-body .yearpicker-year .selected:hover {
+    background: #7367f0;
+    border: none;
+    color: white;
+    font-weight: 500;
+}
+
+.medical-reimbursement-your-statistic .outside .card-header .yearpicker-container .yearpicker-body .yearpicker-year li:hover {
+    background: #7367f026;
+    color: #7367f0;
+    font-weight: 500;
+}
+
+.medical-reimbursement-your-statistic .outside .card-header input {
+    color: #7367f0;
+    font-weight: 500;
+    text-align: left;
+}
+
+.medical-reimbursement-your-statistic .outside .card-header span {
+    position: absolute;
+    margin-top: 8px;
+    margin-left: -26px;
+}
+
+.medical-reimbursement-your-statistic .outside .card-body .statistic {
+    padding-left: 21px;
+}
+
+.medical-reimbursement-your-statistic .outside .card-body .statistic div:first-child {
+    color: #5e5873;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.medical-reimbursement-your-statistic .outside .card-body .statistic div:last-child {
+    color: #6e6b7b;
+}
+
+#request-medical-reimbursement {
+    background: #7367f0 !important;
+}
+
+#medical-reimbursement-pending-status {
+    margin: 40px auto;
+}
+
+#medical-reimbursement-pending-status table {
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-top: 16px;
+}
+
+#medical-reimbursement-pending-status table tr th {
+    border-top: 1px solid #e0e0e0;
+}
+
+#medical-reimbursement-pending-status table tr th,
+#medical-reimbursement-pending-status table tr td {
+    border-right: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+#medical-reimbursement-pending-status table tr th:first-child,
+#medical-reimbursement-pending-status table tr td:first-child {
+    border-left: 1px solid #e0e0e0;
+}
+
+#medical-reimbursement-pending-status table tr:first-child th:first-child {
+    border-top-left-radius: 6px;
+}
+
+#medical-reimbursement-pending-status table tr:first-child th:last-child {
+    border-top-right-radius: 6px;
+}
+
+#medical-reimbursement-pending-status table tr:last-child td:first-child {
+    border-bottom-left-radius: 6px;
+}
+
+#medical-reimbursement-pending-status table tr:last-child td:last-child {
+    border-bottom-right-radius: 6px;
+}
+
+#medical-reimbursement-pending-status .table thead th {
+    border-bottom: none;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+#medical-reimbursement-pending-status .table tbody tr:not(:last-child) td {
+    border-bottom: none;
+}
+
+#medical-reimbursement-pending-status .table tbody td {
+    color: #404040;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+#medical-reimbursement-pending-status .table thead th:not(:nth-child(7)),
+#medical-reimbursement-pending-status .table tbody td:not(:nth-child(7)) {
+    border-right: none;
+}
+
+#medical-reimbursement-pending-status #no-data-available {
+    text-align: center;
+    border-right: 1px solid #e0e0e0;
+}
+
+#medical-reimbursement-pending-status #pending-status-status {
+    width: 71px;
+}
+
+#medical-reimbursement-pending-status #pending-status-details,
+#medical-reimbursement-pending-status #pending-status-cancel,
+#medical-reimbursement-history #pending-status-details {
+    width: 64px;
+    height: 20px;
+    padding: 0;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+#medical-reimbursement-history h4 {
+    margin-bottom: -2px;
+}
+
+#medical-reimbursement-history #pending-status-details {
+    padding-top: 3px;
+}
+
+#medical-reimbursement-history #medical-reimbursement-history-datatables {
+    padding-top: 4px;
+}
+
+#medical-reimbursement-history #medical-reimbursement-history-datatables thead th {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+#medical-reimbursement-history #medical-reimbursement-history-datatables tbody td {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+#medical-reimbursement-history-datatables-search {
+    position: absolute;
+    margin: 10.3px auto auto 20px;
+    color: #bfbfbf;
+}
+
+#medical-reimbursement-history-datatables-search img {
+    margin-right: 5.6px;
+}
+
+#leave-history-filter {
+    margin: auto 12px;
+}
+
+#leave-history-filter div,
+#leave-history-export div {
+    margin-left: -10px;
+}
+
+#leave-history-export div img {
+    margin-right: 6px;
+}
+
+#leave-history-filter img,
+#leave-history-export #angle-down {
+    margin-right: -14px;
+}
+
+#leave-history-filter,
+#leave-history-export {
+    background: white !important;
+    border: 1px solid #e0e0e0 !important;
+    color: #4b4b4b !important;
+    font-weight: 400 !important;
+    font-size: 12px !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 120px;
+    height: 38px;
+    margin-bottom: 7px;
+}
+
+#modal-request-medical-reimbursement .modal-header .close {
+    margin-top: -1.8px;
+    margin-right: -4px;
+}
+
+#modal-request-medical-reimbursement #form-data label {
+    color: #6e6b7b;
+}
+
+#modal-request-medical-reimbursement #form-data #amount:focus,
+#modal-request-medical-reimbursement #form-data #notes:focus {
+    border-color: #7367f0;
+}
+
+#modal-request-medical-reimbursement #form-data .select2-selection__rendered[title="Select Category"],
+#modal-request-medical-reimbursement #form-data .select2-selection__rendered[title="Select Outpatient Type"] {
+    color: #b9b9c3;
+}
+
+#modal-request-medical-reimbursement #outpatient_type_select {
+    display: none;
+}
+
+#modal-request-medical-reimbursement #attachment-substitute {
+    background-color: white !important;
+    border: none !important;
+    border-radius: 5px;
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='5' ry='5' stroke='%237367F0FF' stroke-width='2' stroke-dasharray='6%2c 14' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+    color: #7367f0;
+    font-weight: 500;
+    font-size: 16px;
+    height: 120px;
+}
+
+#modal-request-medical-reimbursement #attachment-substitute img {
+    margin-right: 16px;
+}
+
+#modal-request-medical-reimbursement .custom-input-image-name {
+    border-left: none;
+    border-right: none;
+}
+
+#modal-request-medical-reimbursement .custom-input-image-name::placeholder {
+    position: absolute;
+    margin-top: 2px;
+    margin-left: -12px;
+    color: #4b4b4b;
+}
+
+#modal-request-medical-reimbursement .custom-input-image-name::placeholder,
+#modal-request-medical-reimbursement .custom-input-image-size {
+    color: #4b4b4b;
+}
+
+#modal-request-medical-reimbursement #notes {
+    resize: none;
+}
+
+.medical-step-trigger {
+    width: 220px !important;
+}
+
+#leave-approved-by #medical-details-approve-by {
+    padding: 0;
+    list-style-type: none;
+    display: table;
+}
+
+#leave-approved-by #medical-details-approve-by li {
+    display: table-row;
+}
+
+#leave-approved-by #medical-details-approve-by li span {
+    display: table-cell;
+    padding-right: 1rem;
+}
+
+#leave-details-notes #notes {
+    resize: none;
+}
+
+.leave-details-statistics .card-body .row .col-4 .d-inline-block span,
+.leave-details-statistics .card-body .row .col-12 .d-inline-block span {
+    font-size: 18px;
+}
+
+#leave-details-notes #notes::placeholder {
+    color: #6e6b7b;
+}
+
+.was-validated #category:valid + .select2 .select2-selection,
+.was-validated #outpatient_type:valid + .select2 .select2-selection,
+.was-validated #leave_type_id:valid + .select2 .select2-selection {
+    border-color: #28c76f;
+}
+
+.was-validated #category:invalid + .select2 .select2-selection,
+.was-validated #outpatient_type:invalid + .select2 .select2-selection,
+.was-validated #leave_type_id:invalid + .select2 .select2-selection {
+    border-color: #ea5455;
+}
+
+.was-validated #amount:valid,
+.was-validated #amount:invalid,
+.was-validated #notes:valid,
+.was-validated #notes:invalid {
+    background-image: none;
+    box-shadow: none;
+}
